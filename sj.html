@@ -1,0 +1,165 @@
+
+
+<!-- ************Schoool jiffy form************ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>School Jiffy</title>
+
+	<link rel="stylesheet" href="assets/form.css">
+	<link rel="stylesheet" href="assets/addschool.css">
+	<script src="schooljiffy.js"></script>
+
+</head>
+
+
+	<header>
+		<h1>School Jiffy</h1>
+        <a href="">this can be removed tho</a>
+    </header>
+
+
+    <div class="main-content">
+
+        <!-- You only need this form and the form-basic.css -->
+
+        <form class="form-basic" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Add New School</h1>
+            </div>
+
+            <!-- Get school name -->
+            <div class="form-row">
+                <label>
+                    <span>School Name</span>
+                    <input type="text" name="name" id="Sname_">
+                </label>
+            </div>
+
+             <!-- get State-->
+            <div class="form-row">
+                <label>
+                    <span>State</span>
+                    <input type="text" name="state" id="state_">
+                </label>
+            </div>
+
+               <!-- get City-->
+            <div class="form-row">
+                <label>
+                    <span>City</span>
+                    <input type="text" name="city" id="city_">
+                </label>
+            </div>
+
+                <!-- get Zipcode-->
+            <div class="form-row">
+                <label>
+                    <span>Zipcode</span>
+                    <input type="number" name="zipcode" id="zipcode_">
+                </label>
+            </div>
+
+                <!-- get Tution-->
+            <div class="form-row">
+                <label>
+                    <span>Tution</span>
+                    <input type="number" name="Tution" id="tution_">
+                </label>
+            </div>
+       		
+       		<!-- get popular sport-->
+       	
+
+            <div class="form-row">
+                <label>
+                    <span>Popular sport</span>
+                    <select id="pop_sport_">
+				  	<option value="Football">Football</option>
+				  	<option value="Soccer">Soccer</option>
+				  	<option value="Basketball">Basketball</option>
+				  	<option value="Baseball">Baseball</option>
+				</select>
+                </label>
+            </div>
+                 <!-- get Alum-->
+            <div class="form-row">
+                <label>
+                    <span>Alumuni</span>
+                    <input type="text" name="Alum" id="alum_">
+                </label>
+            </div>
+
+            
+
+            <div class="form-row">
+                <label><span>School Type</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>private</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>public</span>
+                        </label>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+            <!-- get username-->
+            <div class="form-row">
+                <label>
+                    <span>UserName</span>
+                    <input type="text" name="Alum" id="username_">
+                </label>
+            </div>
+
+            <!-- get username-->
+            <div class="form-row">
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="Alum" id="password_">
+                </label>
+            </div>
+   			
+   			<!-- display message-->
+   		  	
+                <div class="form-row">
+                <label>
+                   	<button onclick="checkPassword()">Save School</button>
+                </label>
+            </div>
+            
+              
+ 			 
+        </form>
+
+    </div>
+  
+  	<button onclick="checkPassword()">Save School</button>
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+ 
+
+</body>
+
+</html>
+
+
