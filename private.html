@@ -1,19 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="SJ.css">
+<link rel="stylesheet" type="text/css" href="private.css">
   <title>School Jiffy</title>
- <!--  change title -->
-
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <style>
-    table {
+ 
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -28,6 +29,8 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+.show {display:block;}
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
@@ -47,10 +50,10 @@ tr:nth-child(even) {
     
     /* Set black background color, white text and some padding */
     footer {
-      background-color: rgb(255,255,255);
+      background-color: yellow;
       color: white;
-      padding: 15px
-      text-color :rgb(0,0,0);    }
+      padding: 15px;
+    }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
@@ -59,17 +62,12 @@ tr:nth-child(even) {
         padding: 15px;
       }
       .row.content {height:auto;}
-
-     
-}
-</style>
-
-   }
- 
+    }
+  </style>
 </head>
 <!-- <ul>
-	<li><a href="private.html">Private Schools</a></li>
-	<li><a href="catholic.html">Catholic Schools</a></li>
+    <li><a href="private.html">Private Schools</a></li>
+    <li><a href="catholic.html">Catholic Schools</a></li>
 </ul> -->
 <body>
 
@@ -85,7 +83,7 @@ tr:nth-child(even) {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li class="active"><a href="private.html">Private Schools</a></li>
          <li><a href="addschool.html">Add School</a></li>
@@ -98,6 +96,43 @@ tr:nth-child(even) {
     </div>
   </div>
 </nav>
+
+<br>
+<div class="row">
+<div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+
+
+
+<!-- <input type="text" name="search" placeholder="Search..">
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div> -->
+
+
+
+<!-- <h2>Search/Filter Dropdown</h2>
+<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p> -->
+
   
 <div class="container-fluid text-center">
   <div class="row content">
@@ -107,14 +142,8 @@ tr:nth-child(even) {
       <p><a href="#">Link</a></p> -->
     </div>
     <div class="col-sm-8 text-left">
-        <div class="col-sm-10 text-left">
-      <IMG HEIGHT="40" WIDTH="500" SRC="https://files.slack.com/files-pri/T1XTCNTMF-F20T4TJ6L/logomakr.png">
-    
-      <hr>
-      <h1>Private Schools</h1>
-      <p>Here are some of the best Private Schools in the Bronx.</p>
-      <hr>
-      <h3></h3>
+     <h1><img src="https://files.slack.com/files-pri/T1XTCNTMF-F20T4TJ6L/logomakr.png"></h1>
+      <h2>Private Schools</h2>
       <p><table>
   <tr>
     <th>School Name</th>
@@ -372,21 +401,8 @@ tr:nth-child(even) {
 
     <td></td>
 </table></p>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <!-- <div class="well"> -->
-        <!-- <p>ADS</p> -->
-     <!--  </div> -->
-    <!--   <div class="well"> -->
-       <!--  <p>ADS</p> -->
-     <!--  </div> -->
-    </div>
-  </div>
-</div>
-
 
 <footer class="container-fluid text-center">
-  <text-color
   <p>* Some Private Schools are Relgious based.</p>
 </footer>
 
