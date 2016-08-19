@@ -1,0 +1,32 @@
+img {
+	margin-left: 430px;
+	width: 500px;
+	height: 300px;
+}
+
+h1{
+	text-align: center; 
+	color:green;
+}
+p{
+	text-align: center;
+	font-size: 30px;
+	color:red;
+}
+
+body{
+	background-image: url("http://www.animateit.net/data/media/june2010/animated_60.gif");
+}
+
+a{
+	margin-left: 550px;
+	margin-right:550px;
+}
+
+iframe{
+	width: 500px;
+	height:500px;
+	margin-left: 440px;
+}
+
+
